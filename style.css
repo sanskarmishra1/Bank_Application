@@ -1,0 +1,162 @@
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(145deg, #600000, #330000);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper {
+    width: 95%;
+    max-width: 420px;
+    margin-top: 40px;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #ff3b3b;
+}
+
+/* ---------- PANELS ---------- */
+.panel {
+    background: rgba(255, 0, 0, 0.10);
+    border: 1px solid rgba(255, 80, 80, 0.4);
+    border-radius: 18px;
+    padding: 25px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+.panel-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+/* ---------- INPUTS ---------- */
+.input-group input {
+    width: 90%;
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 120, 120, 0.6);
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 12px;
+    transition: 0.25s ease;
+}
+
+.input-group input:focus {
+    border-color: #ff4b4b;
+    background: rgba(255, 0, 0, 0.15);
+    outline: none;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+    width: 100%;
+    background: #ff3333;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff0000;
+    transform: translateY(-2px);
+}
+
+.btn.small {
+    width: 60%;
+    margin: 8px auto;
+    display: block;
+}
+
+.btn.logout {
+    background: #990000;
+    margin-top: 25px;
+}
+
+.btn.logout:hover {
+    background: #cc0000;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    background: rgba(255, 0, 0, 0.15);
+    border: 1px solid rgba(255, 80, 80, 0.35);
+    border-radius: 16px;
+    padding: 18px;
+    margin-top: 18px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.35);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ---------- INFO/STATUS ---------- */
+.msg, .info-box {
+    font-size: 14px;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.info-box {
+    display: none;
+    background: rgba(255, 200, 200, 0.15);
+    border-left: 5px solid #ff5555;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* ---------- HISTORY LIST ---------- */
+.history-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 12px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.history-list li {
+    background: rgba(255, 120, 120, 0.10);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 5px solid #ff3d3d;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255,0,0,0.15);
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+.history-list li:hover {
+    background: rgba(255, 120, 120, 0.20);
+}

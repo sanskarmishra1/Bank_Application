@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crimson Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="logo">Crimson Bank</h1>
+    </header>
+
+    <!-- LOGIN PANEL -->
+    <div id="loginSection" class="panel active">
+
+        <h2 class="panel-title">Account Login</h2>
+
+        <div class="input-group">
+            <input id="username" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+            <input id="password" type="password" placeholder="Password">
+        </div>
+
+        <button class="btn" onclick="login()">Login</button>
+
+        <p id="loginMsg" class="msg"></p>
+
+    </div>
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="panel">
+
+        <h2 class="panel-title">Welcome, <span id="user"></span></h2>
+
+        <!-- Balance -->
+        <div class="card">
+            <h3>Account Balance</h3>
+            <button class="btn small" onclick="checkBalance()">Check</button>
+            <p id="balance" class="info-box"></p>
+        </div>
+
+        <!-- Transfer -->
+        <div class="card">
+            <h3>Transfer Money</h3>
+
+            <div class="input-group">
+                <input id="toUser" placeholder="Recipient Username">
+            </div>
+
+            <div class="input-group">
+                <input id="amount" type="number" placeholder="Amount">
+            </div>
+
+            <button class="btn small" onclick="transfer()">Send</button>
+            <p id="transferMsg" class="msg"></p>
+        </div>
+
+        <!-- History -->
+        <div class="card">
+            <h3>Transaction History</h3>
+            <button class="btn small" onclick="getHistory()">Load</button>
+            <ul id="history" class="history-list"></ul>
+        </div>
+
+        <!-- Logout -->
+        <button class="btn logout" onclick="logout()">Logout</button>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
